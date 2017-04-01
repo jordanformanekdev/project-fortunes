@@ -1,0 +1,16 @@
+{
+  "name": "scynct",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js"
+  },
+  "author": "Jordan Formanek",
+  "license": "ISC",
+  "dependencies": {
+    "draft-js": "^0.9.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  }
+}
