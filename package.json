@@ -1,16 +1,27 @@
 {
-  "name": "scynct",
-  "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
+  "name": "sampleapp",
+  "version": "0.0.0",
   "scripts": {
-    "start": "electron main.js"
+    "start": "gulp clean:build && gulp frontend && gulp dev",
+    "build": "gulp clean:build && gulp frontend && gulp electron",
+    "package": "gulp clean && gulp frontend && gulp electron && gulp package"
   },
-  "author": "Jordan Formanek",
-  "license": "ISC",
   "dependencies": {
-    "draft-js": "^0.9.1",
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "angular2": "2.0.0-beta.2",
+    "traceur": "0.0.102",
+    "es6-promise": "^3.0.2",
+    "es6-shim": "^0.33.3",
+    "rxjs": "5.0.0-beta.0",
+    "zone.js": "0.5.10",
+    "reflect-metadata": "0.1.2",
+    "systemjs": "0.19.6"
+  },
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "3.9.0",
+    "gulp-atom-electron": "^1.10.0",
+    "gulp-rename": "1.2.2",
+    "gulp-traceur": "0.17.2",
+    "gulp-webserver": "0.9.1"
   }
 }

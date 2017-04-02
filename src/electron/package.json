@@ -1,0 +1,9 @@
+{
+  "main": "main.js",
+  "version": "0.0.0",
+  "name": "sampleapp",
+  "devDependencies": {
+    "gulp-atom-electron": "^1.10.0",
+    "gulp-symdest": "^1.1.0"
+  }
+}
